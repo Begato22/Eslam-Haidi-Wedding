@@ -413,12 +413,37 @@
                   style="background-color: #000; color: #fff; border-radius: 8px; font-weight: 500; border: none; padding: 10px 20px;">
                   <img src="image/uber.png" style="height: 18px; margin-right: 8px;"> Uber
                 </a>
-<!-- 
+                <!-- 
                 <a href="didiglobal://ride/config?destination_lat=31.2471907&destination_lng=29.9999317" class="button"
                   target="_blank"
                   style="background-color: #FF7D00; color: #fff; border-radius: 8px; font-weight: 500; border: none; padding: 10px 20px;">
                   <img src="image/didi.png" style="height: 18px; margin-right: 8px;"> DiDi
                 </a> -->
+
+                <div
+                  style="margin-top: 25px; padding: 15px; border: 1px dashed #D4AF37; border-radius: 12px; background-color: #fff9eb; text-align: center;">
+
+                  <p style="font-size: 0.9rem; color: #555; margin-bottom: 10px; font-weight: 500;">
+                    Or copy these coordinates to any other app:
+                  </p>
+
+                  <div style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+                    <code id="coords"
+                      style="background: #eee; padding: 8px 12px; border-radius: 6px; font-family: monospace; color: #333; font-weight: bold; font-size: 1rem;">
+                      31.2471907,29.9999317
+                    </code>
+
+                    <button onclick="copyToClipboard()"
+                      style="background-color: #D4AF37; color: white; border: none; padding: 8px 15px; border-radius: 6px; cursor: pointer; font-size: 0.85rem; font-weight: bold; transition: 0.3s;">
+                      <i class="far fa-copy"></i> Copy
+                    </button>
+                  </div>
+
+                  <p style="font-size: 0.8rem; color: #888; margin-top: 10px;">
+                    Paste it inside the <span style="color: #444; font-weight: bold;">(Where To?)</span> box in your
+                    app.
+                  </p>
+                </div>
               </div>
 
               <p style="font-size: 0.8rem; color: #999; margin-top: 10px;">
@@ -449,6 +474,14 @@
       easing: "ease-out",
       duration: 800,
     });
+  </script>
+  <script>
+    function copyToClipboard() {
+      const coordsText = "31.2471907,29.9999317";
+      navigator.clipboard.writeText(coordsText).then(() => {
+        alert("Coordinates copied! You can now paste them in any app.");
+      });
+    }
   </script>
 </body>
 
