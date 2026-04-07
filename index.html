@@ -404,15 +404,32 @@
           </div>
           <div class="column is-12 prolog has-text-centered" data-aos="fade-up" data-aos-easing="linear">
 
-            <div class="has-text-centered" data-aos="fade-up" style="margin-top: 20px;">
-              <a href="https://m.uber.com/ul/?action=setPickup&pickup=my_location&dropoff[latitude]=31.2471907&dropoff[longitude]=29.9999317"
-                class="button is-black btn-cta" target="_blank"
-                style="background-color: #000000; color: #ffffff; border-radius: 5px; padding: 10px 25px; font-weight: bold; display: inline-flex; align-items: center; text-decoration: none;">
-                <img src="image/uber.png" alt="Uber" style="height: 20px; width: auto; margin-right: 10px;">
-                Order Uber
-              </a>
-            </div>
+            <div class="column is-12 has-text-centered" style="margin-top: 30px;">
+              <p class="subtitle is-6" style="margin-bottom: 15px; color: #777;">Order a ride to the venue:</p>
 
+              <div class="buttons is-centered">
+                <a href="https://m.uber.com/ul/?action=setPickup&pickup=my_location&dropoff[latitude]=31.2471907&dropoff[longitude]=29.9999317&dropoff[nickname]=Diana%20Hall"
+                  class="button" target="_blank"
+                  style="background-color: #000; color: #fff; border-radius: 8px; font-weight: 500; border: none; padding: 10px 20px;">
+                  <img src="image/uber.png" style="height: 18px; margin-right: 8px;"> Uber
+                </a>
+
+                <a href="didiglobal://ride/request?dropoff_lat=31.2471907&dropoff_lng=29.9999317" class="button"
+                  target="_blank"
+                  style="background-color: #FF7D00; color: #fff; border-radius: 8px; font-weight: 500; border: none; padding: 10px 20px;">
+                  <img src="image/didi.png" style="height: 18px; margin-right: 8px;"> DiDi
+                </a>
+
+                <a href="indriver://?action=set_pickup&pickup=my_location" class="button" target="_blank"
+                  style="background-color: #76FF03; color: #000; border-radius: 8px; font-weight: 500; border: none; padding: 10px 20px;">
+                  <img src="image/indriver.png" style="height: 18px; margin-right: 8px;"> inDrive
+                </a>
+              </div>
+
+              <p style="font-size: 0.8rem; color: #999; margin-top: 10px;">
+                Destination: <span style="text-decoration: underline;">Diana Hall, Alraas Alsawda</span>
+              </p>
+            </div>
           </div>
 
         </div>
